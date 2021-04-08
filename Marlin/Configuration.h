@@ -741,7 +741,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 200.9, 201, 200.9, 100, 100 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 200, 200, 200, 100, 100 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1071,8 +1071,8 @@
 
 // Disable axis steppers immediately when they're not being stepped.
 // WARNING: When motors turn off there is a chance of losing position accuracy!
-#define DISABLE_X true
-#define DISABLE_Y true
+#define DISABLE_X false
+#define DISABLE_Y false
 #define DISABLE_Z false
 
 // Turn off the display blinking that warns about possible accuracy reduction
